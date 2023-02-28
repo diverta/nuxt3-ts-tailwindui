@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
     ssr: false,
     target: 'static',
-    srcDir: 'src',
+    // srcDir: 'src',
     modules: ['@nuxtjs/tailwindcss'],
-    generate: {
-        dir: 'my-site'
-    }
+    // generate: {
+    //     dir: 'my-site'
+    // }
 })
