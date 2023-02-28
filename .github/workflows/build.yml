@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ${{ steps.get_branch.outputs.sha }}-${{ github.run_id }}
-          path: dist/dist
+          path: dist/.output/public
           retention-days: 7
       - name: Wait for Artifact download
         run: sleep 15
@@ -76,7 +76,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ${{ github.sha }}-${{ github.run_id }}
-          path: dist/dist
+          path: dist/.output/public
           retention-days: 7
       - name: Webhook
         uses: diverta/workflow-webhook@v2
