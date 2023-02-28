@@ -34,7 +34,7 @@ jobs:
       - name: Generate
         run: npm run generate
       - name: Zip artifact for upload
-        run: cp dist/* site/
+        run: mkdir site && cp dist/* site/
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -69,7 +69,7 @@ jobs:
       - name: Generate
         run: npm run generate
       - name: Zip artifact for upload
-        run: cp dist/* site/
+        run: mkdir site && cp dist/* site/
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
         with:
