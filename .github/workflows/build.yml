@@ -69,7 +69,7 @@ jobs:
       - name: Generate
         run: npm run generate
       - name: ls
-        run:  ls -la ./
+        run:  ls -la ./dist
 #      - name: Zip artifact for upload
 #        run: mkdir site && cp -r dist/* site/
       - name: Archive Production Artifact
