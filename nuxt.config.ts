@@ -4,4 +4,7 @@ export default defineNuxtConfig({
     target: 'static',
     srcDir: 'src',
     modules: ['@nuxtjs/tailwindcss'],
+    generate: {
+        dir: 'my-site'
+    }
 })
