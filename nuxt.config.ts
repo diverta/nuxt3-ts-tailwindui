@@ -2,5 +2,5 @@
 export default defineNuxtConfig({
     ssr: false,
     modules: ['@nuxtjs/tailwindcss'],
-    rootDir: "site"
+    rootDir: "dist"
 })
