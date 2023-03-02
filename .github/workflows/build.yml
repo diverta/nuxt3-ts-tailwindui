@@ -77,7 +77,7 @@ jobs:
           path: .output/public
           retention-days: 7
       - name: Webhook
-        uses: distributhor/workflow-webhook@v1
+        uses: diverta/workflow-webhook@v2
         env:
           webhook_url: "https://girish.g.kuroco.app/direct/menu/github/"
           webhook_secret: "3900bdac866615b811b5ddc9d1299486"
